@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const reactionSchema= require('./reaction') 
-
+const format = require('../utils/helpers')
 
 const thoughtSchema = new mongoose.Schema({
     thoughtText:{
@@ -13,6 +13,7 @@ const thoughtSchema = new mongoose.Schema({
     createdAt:{
         type:Date,
         default:Date.now,
+        get:timeStamp =>format(timeStamp)
      
     },
     username:{
