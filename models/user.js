@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+//const {Schema, model, Types} 
 
 const userSchema = new mongoose.Schema({
     username:{
@@ -15,13 +16,13 @@ const userSchema = new mongoose.Schema({
     },
     thoughts:[
         {
-            type:Schema.Types.ObjectId,
+            type:mongoose.Schema.Types.ObjectId,
             ref:'thought',
         }
     ],
     friends:[
         {
-            type:Schema.Types.ObjectId,
+            type:mongoose.Schema.Types.ObjectId,
             ref:'user',
         }
     ]
