@@ -1,4 +1,4 @@
-# <NoSQL: Social Network API>
+# NoSQL: Social Network API
 
 ## Description
 In this project, one will dins and API built for a social network web application. With this technology, users can share their thoughts, react to their friend's thoughts, delete their reactions and thoughts , and create a friend list.
