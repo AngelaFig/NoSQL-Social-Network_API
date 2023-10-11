@@ -76,7 +76,7 @@ const thoughtController = {
         try {
             const dbThoughtData = await Thought.findOneAndDelete({ _id: req.params.thoughtId })
             await User.findOneAndUpdate(
-                {username: thought.usernmae},
+                {username: Thought.usernmae},
                 {$pull: {thoughts: req.params.thoughtId}},
                 {new: true}
             );
